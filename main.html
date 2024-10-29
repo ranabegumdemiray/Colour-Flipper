@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLOUR FLIPPER</title>
+    <link rel="stylesheet" href="main.css">
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            margin: 0; 
+            text-align: center; 
+        }
+
+        #purple {
+            background-color: #D4BEE4;
+        }
+        #red {
+            background-color: #F95454;
+        }
+        #green {
+            background-color: #88C273;
+        }
+
+        button {
+            border-radius: 5px;
+            width: 150px;
+            height: 60px;
+            margin: 7px; 
+            cursor: pointer; 
+             box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);;
+        }
+    </style>
+</head>
+<body>
+  
+    <h3 class="title">Colour Flipper</h3>
+<div class="buttons">
+    <button id="purple" onclick="setColor('#9B7EBD')">Purple</button>
+    <button id="red" onclick="setColor('#A04747')">Red</button>
+    <button id="green" onclick="setColor('#798645')">Green</button>
+    <button class="button" onclick="randomColor()">Random</button>
+</div>
+    <script src="index.js"></script>
+</body>
+</html>
